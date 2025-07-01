@@ -2,13 +2,13 @@
 
 A fullstack **ToDo application** built with:
 
-- ⚡️ [Next.js](https://nextjs.org/) – App Router, SSR/CSR
-- 🔐 [Clerk](https://clerk.dev/) – Authentication & user session management
-- 💅 TypeScript – Type-safe fullstack code
-- 📦 Zod – Schema validation for both client and server
-- 🧠 Caching – Using SWR or React Query for efficient client-side data fetching
-- ✏️ Full CRUD – Add, edit, delete tasks (per user)
--  🍃 MongoDB as the database
+-  [Next.js](https://nextjs.org/) – App Router, SSR/CSR
+-  [Clerk](https://clerk.dev/) – Authentication & user session management
+-  TypeScript – Type-safe fullstack code
+-  Zod – Schema validation for both client and server
+-  Caching – Using SWR or React Query for efficient client-side data fetching
+-  Full CRUD – Add, edit, delete tasks (per user)
+-  MongoDB as the database
 
 ---
 
