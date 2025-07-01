@@ -1,0 +1,22 @@
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Todo {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  body      String?
+  completed Boolean @default(false)
+  createAt  DateTime @default(now())
+  user_id   String //reference is the bridge between two digrams
+
+}
+
+
+
+// Address is an embedded document
