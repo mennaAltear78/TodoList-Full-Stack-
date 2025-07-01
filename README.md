@@ -8,6 +8,7 @@ A fullstack **ToDo application** built with:
 - 📦 Zod – Schema validation for both client and server
 - 🧠 Caching – Using SWR or React Query for efficient client-side data fetching
 - ✏️ Full CRUD – Add, edit, delete tasks (per user)
+- - 🍃 MongoDB as the database
 
 ---
 
