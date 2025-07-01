@@ -35,8 +35,6 @@ A fullstack **ToDo application** built with:
 | Prisma      | ORM (if you're using a DB like Postgres) |
 | SWR / React Query | Data fetching & caching        |
 
----
 
-## 📁 Folder Structure (App Router)
 
 
