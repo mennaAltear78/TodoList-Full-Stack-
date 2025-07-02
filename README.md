@@ -14,14 +14,14 @@ A fullstack **ToDo application** built with:
 
 ## 🚀 Features
 
-- 🔐 **Authentication** via Clerk (Sign up / Sign in / Sign out)
-- 🧍 Each user has their own **isolated ToDo list**
-- ➕ Add tasks
-- ✅ Mark tasks as complete
-- 📝 Edit tasks
-- ❌ Delete tasks
-- ⚡️ Fast data fetching with **caching**
-- 🧪 Schema validation with **Zod**
+-  **Authentication** via Clerk (Sign up / Sign in / Sign out)
+-  Each user has their own **isolated ToDo list**
+-  Add tasks
+-  Mark tasks as complete
+-  Edit tasks
+-  Delete tasks
+-  Fast data fetching with **caching**
+-  Schema validation with **Zod**
 
 ---
 
