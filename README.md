@@ -34,7 +34,6 @@ A fullstack **ToDo application** built with:
 | Clerk       | Authentication & user management      |
 | Zod         | Data validation                       |
 | Prisma      | ORM (if you're using a DB like Postgres) |
-| SWR / React Query | Data fetching & caching        |
 
 
 
