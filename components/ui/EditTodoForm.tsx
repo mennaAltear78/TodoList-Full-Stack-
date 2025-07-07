@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import {
   Dialog,
   DialogContent,
-  DialogFooter,
+
   DialogHeader,
   DialogTrigger,
 } from "@/components/ui/dialog";
@@ -14,7 +14,7 @@ import {
   FormControl,
   FormItem,
   FormLabel,
-  FormDescription,
+
   FormMessage,
 } from "@/components/ui/form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -22,9 +22,9 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { todoformSchema } from "@/Schema";
 import { Button } from "@/components/ui/button";
-import { Pen, Plus } from "lucide-react";
-import { createTodeoActions, updateTodeoActions } from "@/actions/todo.actions";
-import { Checkbox } from "@/components/ui/checkbox";
+import { Pen } from "lucide-react";
+import { updateTodeoActions } from "@/actions/todo.actions";
+
 
 import Spinner from "./Spinner";
 import { Todo } from "@/interfaces/TodoInterface";

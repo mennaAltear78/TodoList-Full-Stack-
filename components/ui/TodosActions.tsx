@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Button } from './button'
 import { deleteTodoAction } from '@/actions/todo.actions'
 import Spinner from './Spinner'
-import { Pen, Trash } from 'lucide-react'
+import {  Trash } from 'lucide-react'
 import { EditTodoForm } from './EditTodoForm'
 import { Todo } from '@/interfaces/TodoInterface'
 

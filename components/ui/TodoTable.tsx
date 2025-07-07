@@ -10,11 +10,9 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Todo } from '../../interfaces/TodoInterface';
-import { Button } from "./button";
+
 import { Badge } from "@/components/ui/badge"
-import { deleteTodoAction } from "@/actions/todo.actions";
-import { useState } from "react";
-import Spinner from "./Spinner";
+
 import TodosActions from "./TodosActions";
 
 
