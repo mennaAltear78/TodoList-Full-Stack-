@@ -20,7 +20,7 @@ interface TodoTableProps {
   tododata: Todo[];
 }
 
-export function TodoTable({ tododata  }: TodoTableProps ,userId:String|null) {
+export function TodoTable({ tododata  }: TodoTableProps ,userId:string|null) {
 
 
   return (

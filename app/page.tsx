@@ -12,7 +12,7 @@ import {
 import { auth } from "@clerk/nextjs/server";
 
 export default async function Home() {
-  const { userId:user_id, redirectToSignIn } = await auth();
+  const { userId:user_id } = await auth();
 
 
   const todos = await getTodeoUserActions({user_id});
