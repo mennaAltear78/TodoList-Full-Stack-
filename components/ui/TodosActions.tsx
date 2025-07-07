@@ -6,7 +6,7 @@ import {  Trash } from 'lucide-react'
 import { EditTodoForm } from './EditTodoForm'
 import { Todo } from '@/interfaces/TodoInterface'
 
-function TodosActions({todo}:{todo:Todo},userId:String|null) {
+function TodosActions({todo}:{todo:Todo},userId:string|null) {
     const [isloading, setIsLoading] = useState<boolean >(false); // Track loading per todo
 
   const deleteTodo = async (id: string) => {

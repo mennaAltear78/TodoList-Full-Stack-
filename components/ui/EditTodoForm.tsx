@@ -32,7 +32,7 @@ import { Textarea } from "./textarea";
 
 export const EditTodoForm = ({ todo }: { todo: Todo },userId:string|null) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isloading, setIsLoading] = useState<boolean>(false);
+  const [isloading] = useState<boolean>(false);
  
 
   const form = useForm<z.infer<typeof todoformSchema>>({
@@ -60,7 +60,8 @@ export const EditTodoForm = ({ todo }: { todo: Todo },userId:string|null) => {
       <DialogTrigger asChild>
         <Button className="w-10 mr-2">
           {/* {isloading? <Spinner /> : <Trash className="h-4 w-4" />} */}
-          {isloading ? <Spinner /> : <Pen className="h-4 w-4" />}
+          {isloading ?
+           <Spinner /> : <Pen className="h-4 w-4" />}
         </Button>
       </DialogTrigger>
       <DialogContent>
