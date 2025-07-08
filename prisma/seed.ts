@@ -1,6 +1,6 @@
 import { PrismaClient } from '@prisma/client'
 import{ faker }from '@faker-js/faker'
-import { title } from 'process';
+
 //this to communacate with prisma 
 const prisma = new PrismaClient()
 
