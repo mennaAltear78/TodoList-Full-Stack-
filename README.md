@@ -44,6 +44,6 @@ Make sure you have the following installed:
 ### 1. Clone the Repo:
 
 ```bash
-git clone https://github.com/yourusername/todolist-fullstack.git
+git clone https://github.com/yourusername/TodoList-Full-Stack-.git
 cd todolist-fullstack
 
