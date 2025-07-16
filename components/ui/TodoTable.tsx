@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import {
   Table,
   TableBody,
@@ -8,42 +8,46 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
+} from '@/components/ui/table';
 import { Todo } from '../../interfaces/TodoInterface';
-
-import { Badge } from "@/components/ui/badge"
-
-import TodosActions from "./TodosActions";
-
+import { Badge } from '@/components/ui/badge';
+import TodosActions from './TodosActions';
 
 interface TodoTableProps {
   tododata: Todo[];
+  userId: string | null;
 }
 
-export function TodoTable({ tododata  }: TodoTableProps ,userId:string|null) {
-
-
+export function TodoTable({ tododata, userId }: TodoTableProps) {
   return (
-    <Table >
+    <Table>
       <TableCaption>List of todos</TableCaption>
       <TableHeader>
         <TableRow>
-          <TableHead className="w-[100px] ">ID</TableHead>
-          <TableHead className="w-[150px]  ">Title</TableHead>
+          <TableHead className="w-[100px]">ID</TableHead>
+          <TableHead className="w-[150px]">Title</TableHead>
           <TableHead className="w-[150px] flex justify-center">Body</TableHead>
-          <TableHead className="w-[70px] ">Completed</TableHead>
+          <TableHead className="w-[70px]">Completed</TableHead>
           <TableHead className="w-[150px] text-center">Actions</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
-        {tododata.map((todo,index) => (
+        {tododata.map((todo, index) => (
           <TableRow key={todo.id}>
-            <TableCell className="font-medium">{index+1}</TableCell>
+            <TableCell className="font-medium">{index + 1}</TableCell>
             <TableCell className="font-medium">{todo.title}</TableCell>
-            <TableCell className="flex justify-center mr-10">{todo.body?todo.body:'---'}</TableCell>
-            <TableCell   >{todo.completed ? <Badge className="bg-[#22ee229d] text-white">completed</Badge> : <Badge>incompleted</Badge>}</TableCell>
+            <TableCell className="flex justify-center mr-10">
+              {todo.body ? todo.body : '---'}
+            </TableCell>
             <TableCell>
-             <TodosActions userId={userId} todo={todo}/>
+              {todo.completed ? (
+                <Badge className="bg-[#22ee229d] text-white">completed</Badge>
+              ) : (
+                <Badge>incompleted</Badge>
+              )}
+            </TableCell>
+            <TableCell>
+              <TodosActions userId={userId} todo={todo} />
             </TableCell>
           </TableRow>
         ))}
