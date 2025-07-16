@@ -7,11 +7,11 @@ const prisma = new PrismaClient()
 async function main() {
   await prisma.todo.createMany({
     data: Array.from({ length: 25 }, () => ({
-      title: faker.lorem.words({max:5 , min:2}), // يمكنك إلغاء التعليق إذا كنت تريد إضافة اسم ثابت
-      body: faker.lorem.words({min:1,max:10}), // يمكنك استخدام صورة عشوائية
+      title: faker.lorem.words({max:5 , min:2}), 
+      body: faker.lorem.words({min:1,max:10}), 
       completed: false,
       createAt: new Date(),
-      user_id: '1', // يمكنك استخدام صورة عشوائية
+      user_id: '1',
     })),
   });
 }
