@@ -5,6 +5,7 @@ import {
   DialogContent,
   DialogHeader,
   DialogTrigger,
+  DialogTitle
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import {
@@ -72,6 +73,7 @@ export const EditTodoForm = ({
         </Button>
       </DialogTrigger>
       <DialogContent>
+        <DialogTitle></DialogTitle>
         <DialogHeader>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">

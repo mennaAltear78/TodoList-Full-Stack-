@@ -3,10 +3,11 @@ import React, { useState } from "react";
 import {
   Dialog,
   DialogContent,
-
   DialogHeader,
   DialogTrigger,
+   DialogTitle
 } from "@/components/ui/dialog";
+
 import { Input } from "@/components/ui/input";
 import {
   FormField,
@@ -14,7 +15,6 @@ import {
   FormControl,
   FormItem,
   FormLabel,
-
   FormMessage,
 } from "@/components/ui/form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -27,7 +27,7 @@ import { createTodeoActions } from "@/actions/todo.actions";
 
 import { Textarea } from "./textarea";
 
-export const AddTodoForm = ({userId}:{userId:string |null}) => {
+export const AddTodoForm = ({ userId }: { userId: string | null }) => {
   const [isOpen, setIsOpen] = useState(false);
   const form = useForm<z.infer<typeof todoformSchema>>({
     resolver: zodResolver(todoformSchema),
@@ -43,12 +43,12 @@ export const AddTodoForm = ({userId}:{userId:string |null}) => {
     completed,
   }: z.infer<typeof todoformSchema>) => {
     console.log("created");
-    
+
     await createTodeoActions({
       title,
       body: body as string,
       completed: completed as boolean,
-      user_id :userId as string,
+      user_id: userId as string,
     });
     setIsOpen(false);
   };
@@ -63,6 +63,7 @@ export const AddTodoForm = ({userId}:{userId:string |null}) => {
         </div>
       </DialogTrigger>
       <DialogContent>
+         <DialogTitle></DialogTitle>
         <DialogHeader>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}>
@@ -100,7 +101,7 @@ export const AddTodoForm = ({userId}:{userId:string |null}) => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                        <input
+                      <input
                         type="checkbox"
                         className="mr-2 h-3 w-3"
                         checked={field.value}
