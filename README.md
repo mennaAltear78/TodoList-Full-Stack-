@@ -5,6 +5,8 @@ Welcome to my full-stack **ToDo app**! This project is a modern task manager bui
 I built this to experiment with a robust Next.js stack, focusing on **type safety**, **secure authentication**, and a **great user experience**. Whether you’re a developer looking to learn or just want a solid ToDo app template, this repo has you covered!
 
 ---
+<img width="1368" height="805" alt="Screenshot 2025-07-17 220922" src="https://github.com/user-attachments/assets/0d855182-2412-47e2-9bcb-fc541e015f2c" />
+
 
 ## 🚀 Features
 
